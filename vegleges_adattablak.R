@@ -158,7 +158,15 @@ hun2 <-hun %>%
     n_merleg = scale(merleg),
     n_import = scale(import),
     n_export = scale(export)
+  ) %>% 
+  ungroup()
+
+evek <- c(1997, 2001, 2005, 2009, 2013, 2017, 2021)
+hun2 <- hun2 %>% 
+  mutate(
+    valasztasi_ev = ifelse(hun2$year %in% evek, 1, 0)
   )
+
 hun2 %>% 
   ggplot(aes(x=year, y=n_merleg, color=gp))+
   geom_line()
@@ -174,7 +182,14 @@ cz2 <- cz %>%
     n_merleg = scale(merleg),
     n_import = scale(import),
     n_export = scale(export)
+  ) %>% 
+  ungroup()
+evek <- c(1995, 1997, 2001, 2005, 2009, 2012, 2016, 2020)
+cz2 <- cz2 %>% 
+  mutate(
+    valasztasi_ev = ifelse(cz2$year %in% evek, 1, 0)
   )
+
 
 cz2 %>% 
   ggplot(aes(x=year, y=fdi_flow, color=gp))+
@@ -191,6 +206,12 @@ cro2 <- cro %>%
     n_merleg = scale(merleg),
     n_import = scale(import),
     n_export = scale(export)
+  ) %>%  ungroup()
+
+evek <- c(1996, 1999, 2004, 2008, 2013, 2018)
+cro2 <- cro2 %>% 
+  mutate(
+    valasztasi_ev = ifelse(cro2$year %in% evek, 1, 0)
   )
 
 cro2 %>% 
@@ -208,12 +229,6 @@ leftright <- readxl::read_excel("C:/Users/Anna/Documents/tk/vshift3/nyers/leftri
     )
 
 ossz2 <- merge(ossz, leftright, by = c("year", "country.x")) %>% rename(leftright = value)
-
-evek <- c(1997, 2001, 2005, 2009, 2013, 2017, 2021)
-ossz2 <- ossz2 %>% 
-  mutate(
-    valasztasi_ev = ifelse(ossz2$year %in% evek, 1, 0)
-  )
 ossz2$year <- as.character(ossz2$year)
 
 write.csv(ossz2, "C:/Users/Anna/Documents/tk/vshift3/tisztitott/ossz2.csv")

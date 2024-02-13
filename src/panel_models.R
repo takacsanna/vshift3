@@ -1,22 +1,26 @@
+gc()
+
 library(plm)
+library(here)
 library(tidyverse)
 
-df <- read.csv("C:/Users/Anna/Documents/tk/vshift3/tisztitott/ossz3.csv")
-df$year <- relevel(factor(df$year), ref = "2013")
+df <- read.csv(here("data_inter/data.csv"))
 
-########################szentiment
-kina <- df %>% 
+########################sentiment
+
+#cn
+cn <- df %>% 
   filter(gp == "CN")
 
-p_sent_kina <- plm(log_senti ~ n_export + n_import + leftright + valasztasi_ev + eu, data = kina, model = "pooling")
-summary(p_sent_kina)
+p_sent_cn <- plm(log_senti ~ n_export + n_import + leftright + valasztasi_ev + eu, data = cn, model = "pooling")
+summary(p_sent_cn)
 
-f_sent_kina <- plm(log_senti ~ n_export + n_import + leftright + valasztasi_ev  + eu, data = kina, model = "within", effect = "individual", index=c("country", "year"))
-summary(f_sent_kina)
+f_sent_cn <- plm(log_senti ~ n_export + n_import + leftright + valasztasi_ev  + eu, data = cn, model = "within", effect = "individual", index=c("country", "year"))
+summary(f_sent_cn)
 
-pooltest(p_sent_kina, f_sent_kina)
-#erősen elvetem H0-t, fixhatású
+pooltest(p_sent_cn, f_sent_cn)
 
+#usa
 usa <- df %>% 
   filter(gp == "USA")
 
@@ -27,8 +31,8 @@ f_sent_usa <- plm(log_senti ~ n_export + n_import + leftright + valasztasi_ev + 
 summary(f_sent_usa)
 
 pooltest(p_sent_usa, f_sent_usa)
-#jobb a fix
 
+#ru
 ru <- df %>% 
   filter(gp == "RU")
 
@@ -42,14 +46,14 @@ pooltest(p_sent_ru, f_sent_ru)
 
 #######################################salience
 
-#kína
-p_sal_kina <- plm(salience ~ n_export + n_import + leftright + valasztasi_ev + eu, data = kina, model = "pooling")
-summary(p_sal_kina)
+#cn
+p_sal_cn <- plm(salience ~ n_export + n_import + leftright + valasztasi_ev + eu, data = cn, model = "pooling")
+summary(p_sal_cn)
 
-f_sal_kina <- plm(salience ~ n_export + n_import + leftright + valasztasi_ev  + eu, data = kina, model = "within", effect = "individual", index=c("country", "year"))
-summary(f_sal_kina)
+f_sal_cn <- plm(salience ~ n_export + n_import + leftright + valasztasi_ev  + eu, data = cn, model = "within", effect = "individual", index=c("country", "year"))
+summary(f_sal_cn)
 
-pooltest(p_sal_kina, f_sal_kina)
+pooltest(p_sal_cn, f_sal_cn)
 
 #usa
 p_sal_usa <- plm(salience ~ n_export + n_import + leftright + valasztasi_ev + eu, data = usa, model = "pooling")
@@ -60,7 +64,7 @@ summary(f_sal_usa)
 
 pooltest(p_sal_usa, f_sal_usa)
 
-#oroszország
+#ru
 p_sal_ru <- plm(salience ~ n_export + n_import + leftright + valasztasi_ev + eu, data = ru, model = "pooling")
 summary(p_sal_ru)
 

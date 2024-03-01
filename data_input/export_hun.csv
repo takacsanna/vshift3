@@ -1,175 +1,88 @@
-country,name,value
-China,1993,33030
-China,1994,11720
-China,1995,21879
-China,1996,15197
-China,1997,15251
-China,1998,18850
-China,1999,70780
-China,2000,40640
-China,2001,112698
-China,2002,154693
-China,2003,178082
-China,2004,390870
-China,2005,401960
-China,2006,762040
-China,2007,1014446
-China,2008,1110516
-China,2009,1214685
-China,2010,1530089
-China,2011,1687531
-China,2012,1810642.365
-China,2013,1997306.55
-China,2014,2156226.729
-China,2015,1796783.797
-China,2016,2244571.155
-China,2017,2663851.719
-China,2018,2371480.673
-China,2019,1666400.946
-China,2020,2062772.328
-China,2021,2475922.648
-France,1993,295360.992
-France,1994,379665
-France,1995,513500
-France,1996,479454.016
-France,1997,706099.968
-France,1998,864875.008
-France,1999,1123372
-France,2000,1470547
-France,2001,1818804
-France,2002,1945066
-France,2003,2473362
-France,2004,3090910
-France,2005,3186557
-France,2006,3463762
-France,2007,4485675
-France,2008,5072915
-France,2009,4497356
-France,2010,4748050
-France,2011,5183997
-France,2012,4741081.381
-France,2013,4798231.955
-France,2014,5065487.228
-France,2015,4640837.949
-France,2016,4928435.577
-France,2017,4977767
-France,2018,5378675.793
-France,2019,5281012.382
-France,2020,5067926.015
-France,2021,5905251.018
-Germany,1993,2292346.112
-Germany,1994,3017454
-Germany,1995,3633420.032
-Germany,1996,3754592
-Germany,1997,7033150.976
-Germany,1998,8356772.864
-Germany,1999,9599872
-Germany,2000,10471263
-Germany,2001,10858885
-Germany,2002,12162077
-Germany,2003,14595414
-Germany,2004,17539824
-Germany,2005,18731716
-Germany,2006,21841723
-Germany,2007,26824553
-Germany,2008,28909331
-Germany,2009,21101987
-Germany,2010,23805449
-Germany,2011,27550353
-Germany,2012,25694396.139
-Germany,2013,27888022.586
-Germany,2014,30899985.817
-Germany,2015,27340552.047
-Germany,2016,28293698.112
-Germany,2017,31009859.837
-Germany,2018,33803393.819
-Germany,2019,33827808.495
-Germany,2020,33478028.692
-Germany,2021,37602910.253
-Russian Federation,1993,919059.968
-Russian Federation,1994,807038
-Russian Federation,1995,802572.992
-Russian Federation,1996,752337.024
-Russian Federation,1997,947353.984
-Russian Federation,1998,643283.008
-Russian Federation,1999,356233
-Russian Federation,2000,455388
-Russian Federation,2001,472337
-Russian Federation,2002,454853
-Russian Federation,2003,653165
-Russian Federation,2004,908854
-Russian Federation,2005,1171082
-Russian Federation,2006,1997876
-Russian Federation,2007,2959936
-Russian Federation,2008,3872211
-Russian Federation,2009,2937919
-Russian Federation,2010,3363961
-Russian Federation,2011,3571730
-Russian Federation,2012,3286884.42
-Russian Federation,2013,3373891.857
-Russian Federation,2014,2855657.654
-Russian Federation,2015,1707361.623
-Russian Federation,2016,1595367.236
-Russian Federation,2017,1919343.91
-Russian Federation,2018,1840033.183
-Russian Federation,2019,2026859.49
-Russian Federation,2020,1881814.097
-Russian Federation,2021,2067579.664
-United Kingdom,1993,194620.992
-United Kingdom,1994,464736
-United Kingdom,1995,382928.992
-United Kingdom,1996,377849.984
-United Kingdom,1997,630057.984
-United Kingdom,1998,809163.008
-United Kingdom,1999,1119770
-United Kingdom,2000,1156318
-United Kingdom,2001,1314461
-United Kingdom,2002,1615087
-United Kingdom,2003,1970647
-United Kingdom,2004,3097250
-United Kingdom,2005,3161244
-United Kingdom,2006,3324415
-United Kingdom,2007,4277574
-United Kingdom,2008,5055838
-United Kingdom,2009,4390645
-United Kingdom,2010,5162439
-United Kingdom,2011,5072538
-United Kingdom,2012,4271671.597
-United Kingdom,2013,4195337.928
-United Kingdom,2014,4056711.297
-United Kingdom,2015,3909511.996
-United Kingdom,2016,4004619.627
-United Kingdom,2017,3946512.975
-United Kingdom,2018,4557708.687
-United Kingdom,2019,4025510.627
-United Kingdom,2020,3714617.836
-United Kingdom,2021,4423533.372
-United States,1993,346209.984
-United States,1994,430467
-United States,1995,393596
-United States,1996,449439.008
-United States,1997,589136
-United States,1998,1034347.008
-United States,1999,1297182
-United States,2000,1475016
-United States,2001,1525300
-United States,2002,1199374
-United States,2003,1349112
-United States,2004,1651985
-United States,2005,1896403
-United States,2006,2026037
-United States,2007,2206633
-United States,2008,2478477
-United States,2009,1858778
-United States,2010,1921384
-United States,2011,2268366
-United States,2012,2453641.178
-United States,2013,3292394.35
-United States,2014,3971164.63
-United States,2015,3590703.422
-United States,2016,3534177.601
-United States,2017,3188604.891
-United States,2018,3541174.219
-United States,2019,3419215.158
-United States,2020,3566932.607
-United States,2021,4143667.681
+"country","year","export"
+"China",1993,33030
+"China",1994,11720
+"China",1995,21879
+"China",1996,15197
+"China",1997,15251
+"China",1998,18850
+"China",1999,70780
+"China",2000,40640
+"China",2001,112698
+"China",2002,154693
+"China",2003,178082
+"China",2004,390870
+"China",2005,401960
+"China",2006,762040
+"China",2007,1014446
+"China",2008,1110516
+"China",2009,1214685
+"China",2010,1530089
+"China",2011,1687531
+"China",2012,1810642.365
+"China",2013,1997306.55
+"China",2014,2156226.729
+"China",2015,1796783.797
+"China",2016,2244571.155
+"China",2017,2663851.719
+"China",2018,2371480.673
+"China",2019,1666400.946
+"China",2020,2062772.328
+"China",2021,2475922.648
+"Russian Federation",1993,919059.968
+"Russian Federation",1994,807038
+"Russian Federation",1995,802572.992
+"Russian Federation",1996,752337.024
+"Russian Federation",1997,947353.984
+"Russian Federation",1998,643283.008
+"Russian Federation",1999,356233
+"Russian Federation",2000,455388
+"Russian Federation",2001,472337
+"Russian Federation",2002,454853
+"Russian Federation",2003,653165
+"Russian Federation",2004,908854
+"Russian Federation",2005,1171082
+"Russian Federation",2006,1997876
+"Russian Federation",2007,2959936
+"Russian Federation",2008,3872211
+"Russian Federation",2009,2937919
+"Russian Federation",2010,3363961
+"Russian Federation",2011,3571730
+"Russian Federation",2012,3286884.42
+"Russian Federation",2013,3373891.857
+"Russian Federation",2014,2855657.654
+"Russian Federation",2015,1707361.623
+"Russian Federation",2016,1595367.236
+"Russian Federation",2017,1919343.91
+"Russian Federation",2018,1840033.183
+"Russian Federation",2019,2026859.49
+"Russian Federation",2020,1881814.097
+"Russian Federation",2021,2067579.664
+"United States",1993,346209.984
+"United States",1994,430467
+"United States",1995,393596
+"United States",1996,449439.008
+"United States",1997,589136
+"United States",1998,1034347.008
+"United States",1999,1297182
+"United States",2000,1475016
+"United States",2001,1525300
+"United States",2002,1199374
+"United States",2003,1349112
+"United States",2004,1651985
+"United States",2005,1896403
+"United States",2006,2026037
+"United States",2007,2206633
+"United States",2008,2478477
+"United States",2009,1858778
+"United States",2010,1921384
+"United States",2011,2268366
+"United States",2012,2453641.178
+"United States",2013,3292394.35
+"United States",2014,3971164.63
+"United States",2015,3590703.422
+"United States",2016,3534177.601
+"United States",2017,3188604.891
+"United States",2018,3541174.219
+"United States",2019,3419215.158
+"United States",2020,3566932.607
+"United States",2021,4143667.681

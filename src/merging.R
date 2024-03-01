@@ -16,9 +16,7 @@ hun <- hun %>%
 
 fdi_hun <- fdi_hun %>% 
   mutate(
-    gp = case_when(country == "Franciaország" ~ "FR",
-                   country == "Németország" ~ "DE", 
-                   country == "Egyesült Királyság" ~ "UK",
+    gp = case_when(
                    country == "Oroszország" ~ "RU", 
                    country == "Kína" ~ "CN",
                    country == "Egyesült Államok" ~ "USA")
@@ -28,9 +26,7 @@ hun2 <- merge(hun, fdi_hun, by=c("gp", "year"))
 
 import_hun <- import_hun %>%
   mutate(
-    gp = case_when(country == "France" ~ "FR",
-                   country == "Germany" ~ "DE",
-                   country == "United Kingdom" ~ "UK",
+    gp = case_when(
                    country == "Russian Federation" ~ "RU",
                    country == "China" ~ "CN",
                    country == "United States" ~ "USA")
@@ -46,9 +42,7 @@ hun3 <- hun2 %>%
 
 export_hun <- export_hun %>%
   mutate(
-    gp = case_when(country == "France" ~ "FR",
-                   country == "Germany" ~ "DE",
-                   country == "United Kingdom" ~ "UK",
+    gp = case_when(
                    country == "Russian Federation" ~ "RU",
                    country == "China" ~ "CN",
                    country == "United States" ~ "USA")
@@ -75,10 +69,8 @@ cz <- cz %>%
 
 fdi_cz <- fdi_cz %>%
   mutate(
-    gp = case_when(country == "France" ~ "FR",
-                   country == "Germany" ~ "DE",
+    gp = case_when(
                    country == "Russia" ~ "RU",
-                   country == "United Kingdom" ~ "UK",
                    country == "Russian Federation" ~ "RU", 
                    country == "China" ~ "CN",
                    country == "United States" ~ "USA")
@@ -94,9 +86,7 @@ cz2 <- merge(cz, fdi_cz, by = c("gp", "year"))
 
 import_cz <- import_cz %>%
   mutate(
-    gp = case_when(country == "France" ~ "FR",
-                   country == "Germany" ~ "DE",
-                   country == "United Kingdom" ~ "UK",
+    gp = case_when(
                    country == "Russian Federation" ~ "RU",
                    country == "China" ~ "CN",
                    country == "United States" ~ "USA")
@@ -110,9 +100,7 @@ cz3 <- cz2 %>%
 
 export_cz <- export_cz %>% 
   mutate(
-    gp = case_when(country == "France" ~ "FR",
-                   country == "Germany" ~ "DE",
-                   country == "United Kingdom" ~ "UK",
+    gp = case_when(
                    country == "Russian Federation" ~ "RU",
                    country == "China" ~ "CN",
                    country == "United States" ~ "USA")
@@ -139,9 +127,7 @@ cro<-cro %>%
 unique(fdi_cro$country)
 fdi_cro <- fdi_cro %>%
   mutate(
-    gp = case_when(country == "FRANCE" ~ "FR",
-                   country == "GERMANY" ~ "DE",
-                   country == "UNITED KINGDOM" ~ "UK",
+    gp = case_when(
                    country == "RUSSIAN FEDERATION" ~ "RU",
                    country == "CHINA" ~ "CN",
                    country == "UNITED STATES" ~ "USA")
@@ -149,9 +135,7 @@ fdi_cro <- fdi_cro %>%
 cro2 <- merge(cro, fdi_cro, by = c("gp", "year"))
 import_cro <- import_cro %>%
   mutate(
-    gp = case_when(country == "France" ~ "FR",
-                   country == "Germany" ~ "DE",
-                   country == "United Kingdom" ~ "UK",
+    gp = case_when(
                    country == "Russian Federation" ~ "RU",
                    country == "China" ~ "CN",
                    country == "United States" ~ "USA")
@@ -165,9 +149,7 @@ cro3 <- cro2 %>%
 
 export_cro <- export_cro %>%
   mutate(
-    gp = case_when(country == "France" ~ "FR",
-                   country == "Germany" ~ "DE",
-                   country == "United Kingdom" ~ "UK",
+    gp = case_when(
                    country == "Russian Federation" ~ "RU",
                    country == "China" ~ "CN",
                    country == "United States" ~ "USA")
